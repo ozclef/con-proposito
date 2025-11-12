@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bio-US | Creando con propósito</title>
+  <style>
+    :root{
+      --bg:#0f172a; --fg:#f8fafc; --accent:#22d3ee; --soft:#334155;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body{ background:var(--bg); color:var(--fg); margin:0; display:flex; flex-direction:column; min-height:100vh;}
+    header{ text-align:center; padding:2rem 1rem; border-bottom:1px solid var(--soft); }
+    header h1{ margin:0; font-size:2rem; color:var(--accent); }
+    nav{ display:flex; justify-content:center; gap:1rem; margin-top:1rem; flex-wrap:wrap; }
+    nav a{ color:var(--fg); text-decoration:none; font-weight:700; padding:6px 10px; border-radius:6px; }
+    nav a:hover{ background:rgba(34,211,238,0.08); color:var(--accent); }
+    main{ flex:1; display:flex; flex-direction:column; align-items:center; justify-content:center; text-align:center; padding:2rem;}
+    footer{ text-align:center; padding:1rem; border-top:1px solid var(--soft); color:#94a3b8; font-size:0.9rem;}
+    button{ background:var(--accent); border: none; color:var(--bg); padding:0.6rem 1.2rem; border-radius:6px; cursor:pointer; font-weight:700;}
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🌱 Bio-US</h1>
+    <nav>
+      <a href="/departamentos/">Departamentos</a>
+      <a href="/proyectos/">Proyectos</a>
+      <a href="/colabora/">Colabora</a>
+      <a href="/principios/">Principios</a>
+      <a href="https://ozclef.github.io/portafolio/">Portafolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Creando con propósito y empatía</h2>
+    <p>Este espacio representa la convicción de construir sin dañar, aprender sin rendirse, y crecer con ética.</p>
+    <div style="margin-top:1rem;">
+      <button onclick="location.href='/principios/'">Ver Principios y Convicciones</button>
+    </div>
+  </main>
+
+  <footer>
+    Hecho con respeto por <strong>Oscar Díaz</strong> · © 2025 · <a href="/principios/" style="color:inherit; text-decoration:underline;">Principios</a>
+  </footer>
+</body>
+</html>
